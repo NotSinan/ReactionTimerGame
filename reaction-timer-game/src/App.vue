@@ -43,4 +43,15 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+button {
+  background: blue;
+  color: aqua;
+  border: none;
+}
+
+button[disabled] {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
 </style>
