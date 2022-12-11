@@ -1,11 +1,12 @@
 <template>
   <h1>Reaction Timer</h1>
-  <button @click="start" :disabled="isPlaying">Play</button>
+  <button @click="start" :disabled="isPlaying" variant="contained">Play</button>
   <Block v-if="isPlaying" :delay="delay" @end="endGame" />
   <Result v-if="showResults" :score="score" />
 </template>
 
 <script>
+import { Button } from "@material-ui/core";
 import Block from "./components/Block.vue";
 import Result from "./components/Results.vue";
 export default {
